@@ -7,8 +7,8 @@ namespace autotracert {
 
 struct RtcTaskCfg {
   int hz = 100;            // 周期频率
-  int priority = 80;       // SCHED_FIFO 优先级 (1-99)
-  int cpu_core = -1;       // 绑定核，-1 不绑定
+  int priority = 80;       // SCHED_FIFO
+  int cpu_core = -1;   
   int deadline_ms = 10;    // 软截止
 };
 
